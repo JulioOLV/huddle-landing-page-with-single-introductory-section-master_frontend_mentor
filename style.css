@@ -1,0 +1,127 @@
+body {
+  height: 100vh;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(257, 40%, 49%);
+}
+
+header {
+  padding: 60px 0 0 80px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 64px 80px 0 80px;
+  gap: 52px;
+}
+
+section {
+  flex: 1;
+}
+
+section:nth-child(2) {
+  margin-top: 52px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #FFF;;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+p {
+  color: #FFF;
+  margin-top: 36px;
+  line-height: 24px;
+}
+
+button {
+  padding: 16px 60px;
+  margin-top: 36px;
+  border: none;
+  border-radius: 24px;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0px 5px 24px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  right: 0;
+  bottom: 0;
+  padding: 0 80px 24px 0;
+  gap: 12px;
+  justify-content: end;
+}
+
+i {
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  padding: 16px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 46px;
+  text-align: center;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  img {
+    width: 888px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  img {
+    width: 650px;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    padding: 60px 0 0 24px;
+  }
+
+  main {
+    padding: 64px 24px 0 24px;
+    gap: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+
+  section > img {
+    width: 330px;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  footer {
+    padding: 64px 0px 24px 0;
+    justify-content: center;
+  }
+}
